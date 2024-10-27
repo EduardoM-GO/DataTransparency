@@ -1,0 +1,50 @@
+# Visual Studio
+.vscode/
+*.sln
+*.csproj
+*.user
+*.suo
+*.cache
+*.vs/
+*.vscode/
+*.dbmdl
+*.dbproj
+*.pdb
+*.jfm
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+*.exe
+*.dll
+*.pdb
+*.mdb
+*.appx
+*.appxbundle
+*.appxupload
+*.apk
+
+# NuGet
+*.nupkg
+*.nuspec
+*.snupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+
+# Rider
+.idea/
+*.sln.iml
+*.userprefs
+
+# Visual Studio Code
+.vscode/
+
+# SMAPI Specific
+Mods/
+*.json
+*.log
