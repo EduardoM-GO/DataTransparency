@@ -1,0 +1,37 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "dotnet build",
+      "problemMatcher": []
+    },
+    {
+      "label": "copy-dll",
+      "type": "shell",
+      "command": "cp '${workspaceFolder}/bin/Debug/net6.0/DataTransparency.dll' 'D:/SteamLibrary/steamapps/common/Stardew Valley/Mods/DataTransparency/'",
+      "problemMatcher": [],
+      "dependsOn": "build"
+    },
+    {
+      "label": "copy-manifest",
+      "type": "shell",
+      "command": "cp '${workspaceFolder}/manifest.json' 'D:/SteamLibrary/steamapps/common/Stardew Valley/Mods/DataTransparency/'",
+      "problemMatcher": [],
+      "dependsOn": "copy-dll"
+    },
+    {
+      "label": "run-stardew",
+      "type": "shell",
+      "command": "start 'D:/SteamLibrary/steamapps/common/Stardew Valley/StardewModdingAPI.exe'",
+      "problemMatcher": [],
+      "dependsOn": "copy-manifest"
+    },
+    {
+      "label": "build-and-run-stardew",
+      "dependsOn": ["build", "copy-dll", "copy-manifest", "run-stardew"],
+      "problemMatcher": []
+    }
+  ]
+}

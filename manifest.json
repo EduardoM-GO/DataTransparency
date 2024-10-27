@@ -1,0 +1,10 @@
+{
+    "Name": "DataTransparency",
+    "Author": "CrispAnemone",
+    "Version": "1.0.0",
+    "Description": "Descrição do seu mod",
+    "UniqueID": "CrispAnemone.DataTransparency",
+    "EntryDll": "DataTransparency.dll",
+    "MinimumApiVersion": "3.0.0",
+    "UpdateKeys": []
+}
